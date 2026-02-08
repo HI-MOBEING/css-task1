@@ -1,0 +1,799 @@
+/* ==================================== */
+/* General Styles for All Assignments */
+/* ==================================== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.main-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+    border-bottom: 3px double #ccc;
+    padding-bottom: 10px;
+}
+
+.assignment-group {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.assignment-group h2 {
+    color: #2196f3; /* Elzero Blue */
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.assignment-section {
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-top: 1px dashed #e0e0e0;
+}
+
+.assignment-title {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+
+/* =================================================================== */
+/* LESSONS 01-04: Elements And Naming (Conceptual Answers) */
+/* =================================================================== */
+
+/* التكليف 01: Selectors */
+/* Any Element With Class Title */ 
+.title { } 
+
+/* Element With ID nav */ 
+#nav { } 
+
+/* All <div> Elements */ 
+div { } 
+
+/* All <h2> Elements */ 
+h2 { } 
+
+/* التكليف 05: Valid Identifiers */
+/* Valid */ 
+._user-name { } 
+/* Valid */ 
+.-user-name { } 
+/* Not Valid */ 
+/*.1user-name { }*/ 
+/* Not Valid */ 
+/*.@user-name { }*/ 
+/* Not Valid */ 
+/*.user@name { }*/ 
+/* Valid */ 
+._user10name { } 
+/* Valid */ 
+.u { }
+
+/* التكليف 06: Best Practice */
+/* Bad */ 
+.USERNAME { } 
+/* Bad */ 
+.UserName { } 
+/* Good (Kebab Case is standard) */ 
+.user-name { } 
+/* Bad */ 
+.userName { } 
+/* Bad */ 
+.usernameprofile { }
+
+
+/* =================================================================== */
+/* LESSONS 05-08: Background, Margin, Padding (Practical Tasks) */
+/* =================================================================== */
+
+/* Common Styles for Assignment 05-08 Shapes */
+.assign-5-8-1, .assign-5-8-2, .assign-5-8-3, .assign-5-8-4 {
+    /* 2. Center the Div Horizontally */
+    margin: 20px auto; 
+    
+    /* Center text inside */
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.5;
+    box-sizing: border-box; /* To keep dimensions consistent with padding */
+}
+
+/* التكليف 01 */
+.assign-5-8-1 {
+    width: 500px;
+    padding: 20px;
+}
+
+/* Shape 1: blueviolet (Using Hex for Background) */
+.assign-1-shape-1 {
+    background-color: #8A2BE2;
+}
+
+/* Shape 2: Same color, Alpha Channel 0.5 */
+.assign-1-shape-2 {
+    background-color: rgba(138, 43, 226, 0.5);
+}
+
+/* Shape 3: Same color, Alpha Channel 0.1 */
+.assign-1-shape-3 {
+    background-color: rgba(138, 43, 226, 0.1);
+    color: #333; /* Change text color for visibility */
+}
+
+/* التكليف 02 */
+.assign-5-8-2 {
+    width: 400px;
+    height: 400px;
+    line-height: 400px;
+    color: #333;
+    border: 1px solid #ddd;
+    background-image: url('https://via.placeholder.com/100/f0f0f0/333?text=IMG');
+}
+.assign-2-shape-1 { background-repeat: no-repeat; }
+.assign-2-shape-2 { background-repeat: repeat-y; }
+.assign-2-shape-3 { background-repeat: repeat-x; }
+.assign-2-shape-4 { background-repeat: repeat; }
+
+
+/* التكليف 03 */
+.assign-3-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.assign-5-8-3 {
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    padding-top: 5px; 
+    line-height: 1.5;
+    color: #000;
+    border: 1px solid #ddd;
+    background-image: url('https://via.placeholder.com/100/f0f0f0/333?text=IMG');
+}
+.assign-3-shape-1 { background-position: top left; }
+.assign-3-shape-2 { background-position: top right; }
+.assign-3-shape-3 { background-position: bottom left; }
+.assign-3-shape-4 { background-position: bottom right; }
+
+/* التكليف 04 */
+.assign-4-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.assign-5-8-4 {
+    width: 400px;
+    height: 400px;
+    line-height: 400px;
+    border: 1px solid #ddd;
+}
+.assign-4-shape-1 {
+    /* Color: #eee, Image, No Repeat, Position Top Right */
+    background: #eee url('https://via.placeholder.com/100/f0f0f0/333?text=IMG') no-repeat top right;
+    color: #333; 
+}
+.assign-4-shape-2 {
+    /* Color: #000, Image, Repeat Y, Position 10px 50px */
+    background: #000 url('https://via.placeholder.com/100/f0f0f0/333?text=IMG') repeat-y 10px 50px;
+}
+
+
+/* =================================================================== */
+/* LESSONS 09-12: Border, Outline, Display (Practical Tasks) */
+/* =================================================================== */
+
+/* التكليف 01 */
+.assign-9-12-1 {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 300px; 
+    font-weight: bold;
+    font-size: 20px;
+}
+.assign-9-12-1.assign-1-shape-1 {
+    border: 5px solid blue;
+    border-radius: 50%;
+    color: blue;
+}
+.assign-9-12-1.assign-1-shape-2 {
+    border-top: 5px dashed red;
+    border-bottom: 5px dashed red;
+    border-left: 5px double green;
+    border-right: 5px double green;
+    border-radius: 10px;
+    color: #333;
+}
+.assign-9-12-1.assign-1-shape-3 {
+    border-top: 5px dotted red;
+    border-right: 5px solid blue;
+    border-bottom: 5px dashed green;
+    border-left: 5px double black;
+    /* Top-Left, Top-Right, Bottom-Right, Bottom-Left */
+    border-radius: 10px 20px 30px 40px; 
+    color: #333;
+}
+
+/* التكليف 02 */
+.assign-9-12-2 {
+    outline: 5px solid red;
+    outline-offset: -5px; 
+    margin: 10px;
+    padding: 10px;
+    background-color: #eee;
+}
+
+/* Span element (naturally inline) -> should become display: block */
+span.assign-9-12-2 {
+    display: block; 
+    width: fit-content; 
+    color: red;
+    font-weight: bold;
+}
+
+/* Div elements (naturally block) -> should become display: inline-block */
+div.assign-9-12-2 {
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+}
+
+/* =================================================================== */
+/* LESSONS 17-21: Text Formatting (Practical Tasks) */
+/* =================================================================== */
+
+/* التكليف 01: Color, Direction, Text Decoration */
+
+/* Common Styles for Assignment 01 */
+.assign-17-21-1 {
+    width: 500px;
+    padding: 15px;
+    margin: 20px auto;
+    border: 2px solid #ff5722; /* Deep Orange */
+    background-color: #fff3e0; /* Light Orange Background */
+    box-sizing: border-box;
+}
+.assign-17-21-1 p {
+    margin-bottom: 10px;
+}
+
+/* Element 1: English text */
+.assign-17-21-1.element-1 {
+    /* 1. Direction Right to Left (RTL) */
+    direction: rtl; 
+    /* 2. Color Blue */
+    color: blue;
+}
+.assign-17-21-1.element-1 a {
+    /* 3. Link Color Red */
+    color: red;
+    /* 4. No Underline */
+    text-decoration: none;
+}
+
+/* Element 2: Arabic text */
+.assign-17-21-1.element-2 {
+    /* 1. Direction Right to Left (RTL) - Default for Arabic, but explicit is good */
+    direction: rtl; 
+    /* 2. Color Green */
+    color: green;
+    /* 3. Text Align Right */
+    text-align: right;
+}
+.assign-17-21-1.element-2 a {
+    /* 4. Link Color #000 */
+    color: #000;
+    /* 5. No Underline */
+    text-decoration: none;
+}
+
+
+/* التكليف 02: Text Transform, Letter Spacing, Word Spacing */
+
+/* Common Styles for Assignment 02 */
+.assign-17-21-2 {
+    width: 600px;
+    padding: 15px;
+    margin: 20px auto;
+    border: 2px solid #009688; /* Teal */
+    background-color: #e0f2f1; /* Light Teal Background */
+    box-sizing: border-box;
+}
+.assign-17-21-2 p {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Element 3: Uppercase and Letter Spacing */
+.assign-17-21-2.element-3 p {
+    /* 1. Transform to Uppercase */
+    text-transform: uppercase;
+    /* 2. Letter Spacing 3px */
+    letter-spacing: 3px; 
+}
+
+/* Element 4: Word Spacing */
+.assign-17-21-2.element-4 p {
+    /* 1. Word Spacing 10px */
+    word-spacing: 10px; 
+    /* 2. Initial Case (Capitalize each word) */
+    text-transform: capitalize; 
+}
+
+
+/* التكليف 03: Text Shadow */
+
+/* Common Styles for Assignment 03 */
+.assign-17-21-3 {
+    width: 600px;
+    padding: 15px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    border: 2px solid #9c27b0; /* Purple */
+    background-color: #f3e5f5; /* Light Purple Background */
+    box-sizing: border-box;
+}
+
+/* Element 5: Simple Shadow */
+.assign-17-21-3.element-5 {
+    color: #4a148c; /* Dark Purple Text */
+    /* 1. Shadow: Horizontal Offset 2px, Vertical Offset 2px, Blur 0px, Color Black */
+    text-shadow: 2px 2px 0 black;
+}
+
+/* Element 6: Multiple Shadows */
+.assign-17-21-3.element-6 {
+    color: #ffeb3b; /* Yellow Text */
+    /* 1. Multiple Shadows (comma separated) */
+    text-shadow: 
+        1px 1px 0 #000,   /* Black, immediate border */
+        2px 2px 0 #000,
+        3px 3px 0 #e91e63, /* Pink, offset */
+        4px 4px 5px rgba(0, 0, 0, 0.5); /* Faded shadow */
+}
+
+/* التكليف 04: White Space */
+
+/* Common Styles for Assignment 04 */
+.assign-17-21-4 {
+    width: 500px;
+    height: 150px;
+    padding: 15px;
+    margin: 20px auto;
+    border: 2px solid #e91e63; /* Pink */
+    background-color: #fce4ec; /* Light Pink Background */
+    overflow: auto; /* To show the effect within the box */
+    box-sizing: border-box;
+}
+.assign-17-21-4 p {
+    margin: 0;
+    font-family: monospace; /* Use monospaced font to better see white space */
+}
+
+/* Element 7: White Space Pre-Wrap */
+.assign-17-21-4.element-7 p {
+    /* 1. White-Space: pre-wrap (respects spaces and line breaks, but wraps text) */
+    white-space: pre-wrap; 
+}
+
+
+
+
+/* =================================================================== */
+/* LESSONS 22-26: Inheritance, Typography (Practical Tasks) */
+/* =================================================================== */
+
+/* التكليف 01: Inheritance and Initial/Inherit/Unset */
+
+.parent-element {
+    /* Set a custom color on the parent */
+    color: #0d47a1; 
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+    border: 3px solid #0d47a1;
+    background-color: #e3f2fd;
+    font-size: 18px;
+}
+.parent-element p,
+.parent-element a {
+    margin-top: 10px;
+}
+
+
+.child-inherit {
+    color: inherit; 
+    font-weight: bold;
+}
+
+/
+.child-initial {
+   
+    color: initial; 
+}
+
+
+.child-unset {
+   
+    color: unset; 
+}
+
+
+.child-inherit-link {
+    color: inherit; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* التكليف 02: Font Family and Font Style */
+
+/* Common Styles for Assignment 02 */
+.assign-22-26-2 {
+    width: 600px;
+    padding: 15px;
+    margin: 20px auto;
+    border: 2px solid #5d4037; 
+    background-color: #efebe9; 
+    box-sizing: border-box;
+}
+.assign-22-26-2 p {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Element 3: Monospace, Italic */
+.assign-22-26-2.element-3 p {
+    font-family: monospace; 
+    font-style: italic;
+}
+
+
+.assign-22-26-2.element-4 p {
+    font-family: fantasy;
+    font-style: oblique;
+}
+
+
+/* التكليف 03: Font Weight, Size, Line Height */
+
+/* Common Styles for Assignment 03 */
+.assign-22-26-3 {
+    width: 700px;
+    padding: 15px;
+    margin: 20px auto;
+    border: 2px solid #ff9800; 
+    background-color: #fff3e0; 
+    box-sizing: border-box;
+}
+.assign-22-26-3 p {
+    margin: 0;
+}
+
+/* Element 5: Bold, Large Size, Wide Line Height */
+.assign-22-26-3.element-5 p {
+    
+    font-weight: 900; 
+    font-size: 24px;
+    line-height: 2;
+}
+
+/* Element 6: Light, Small Size, Tight Line Height */
+.assign-22-26-3.element-6 p {
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+
+
+/* =================================================================== */
+/* LESSONS 30-33: Position, List, Table */
+/* =================================================================== */
+
+/* التكليف 01 */
+.assign-30-33-1-parent {
+    width: 300px;
+    height: 200px;
+    background-color: #eee;
+    border: 2px solid #333;
+    margin: 20px auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.assign-30-33-1-child {
+    width: 50px;
+    height: 50px;
+    background-color: #f44336;
+    color: white;
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* التكليف 02 */
+.assign-30-33-2-sticky {
+    background-color: #2196f3;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    font-weight: bold;
+}
+
+/* التكليف 03 */
+.assign-30-33-3-list {
+    list-style: square inside;
+    background-color: #e3f2fd;
+    padding: 20px;
+    width: fit-content;
+    margin: 10px auto;
+}
+
+.assign-30-33-3-list li {
+    padding: 5px 0;
+    border-bottom: 1px solid #bbdefb;
+}
+
+.assign-30-33-3-list li:last-child {
+    border-bottom: none;
+}
+
+/* التكليف 04 */
+.assign-30-33-4-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.assign-30-33-4-table th, 
+.assign-30-33-4-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.assign-30-33-4-table thead {
+    background-color: #333;
+    color: white;
+}
+
+.assign-30-33-4-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+
+
+
+
+
+
+/* =================================================================== */
+/* LESSONS 34-37: Pseudo Classes, Pseudo Elements */
+/* =================================================================== */
+
+/* التكليف 01 */
+.assign-34-37-1 div {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #eee;
+}
+
+.assign-34-37-1 div:first-child {
+    color: red;
+    font-weight: bold;
+}
+
+.assign-34-37-1 div:last-child {
+    color: blue;
+    font-weight: bold;
+}
+
+/* التكليف 02 */
+.assign-34-37-2 {
+    list-style: none;
+    padding: 0;
+}
+
+.assign-34-37-2 li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.assign-34-37-2 li:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.assign-34-37-2 li:nth-child(3n) {
+    color: green;
+    font-weight: bold;
+}
+
+/* التكليف 03 */
+.assign-34-37-3 {
+    width: 200px;
+    height: 50px;
+    background-color: #333;
+    color: white;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-weight: bold;
+}
+
+.assign-34-37-3::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background-color: #ff5722;
+    left: -15px;
+}
+
+.assign-34-37-3::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background-color: #ff5722;
+    right: -15px;
+}
+
+/* التكليف 04 */
+.assign-34-37-4 p:not(.no-style) {
+    background-color: #e3f2fd;
+    padding: 10px;
+    border-left: 5px solid #2196f3;
+}
+
+.assign-34-37-4 p::selection {
+    background-color: #ffeb3b;
+    color: #000;
+}
+
+
+
+/* =================================================================== */
+/* LESSONS 38-41: Border Radius, Box Shadow */
+/* =================================================================== */
+
+/* التكليف 01 */
+.assign-38-41-1 {
+    width: 100px;
+    height: 100px;
+    background-color: #e91e63;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.shape-circle {
+    border-radius: 50%;
+}
+
+.shape-rounded {
+    border-radius: 10px;
+}
+
+.shape-custom {
+    border-radius: 50px 0;
+}
+
+/* التكليف 02 */
+.assign-38-41-2 {
+    width: 200px;
+    height: 100px;
+    background-color: #fff;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* التكليف 03 */
+.assign-38-41-3 {
+    width: 200px;
+    height: 100px;
+    background-color: #eee;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 
+        inset 0 0 10px #333,
+        5px 5px 0 #2196f3,
+        -5px -5px 0 #4caf50;
+}
+
+
+/* =================================================================== */
+/* LESSONS 46-53: Flexbox */
+/* =================================================================== */
+
+/* Common Item Style for Flex Assignments */
+.flex-item {
+    background-color: #f44336;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+/* التكليف 01 */
+.assign-46-53-1 {
+    display: flex;
+    /* Spreads items with equal space between them */
+    justify-content: space-between;
+    background-color: #eee;
+    padding: 10px;
+}
+
+/* التكليف 02 */
+.assign-46-53-2 {
+    display: flex;
+    /* Allows items to move to a new line if there is no space */
+    flex-wrap: wrap;
+    /* Centers items horizontally and vertically */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 300px;
+    background-color: #ddd;
+}
+
+.assign-46-53-2 .flex-item {
+    width: 100px;
+    background-color: #2196f3;
+}
+
+/* التكليف 03 */
+.assign-46-53-3 {
+    display: flex;
+    background-color: #cfd8dc;
+    padding: 10px;
+}
+
+.item-a {
+    order: 2; 
+    background-color: #4caf50;
+}
+
+.item-b {
+   
+    flex-grow: 1; 
+    background-color: #ff9800;
+}
+
+.item-c {
+    order: 1; 
+    background-color: #9c27b0;
+}
